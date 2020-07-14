@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffe6cc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.tempGraph">
+   <children>
+      <LineChart fx:id="lineChart1" layoutX="73.0" layoutY="35.0" prefHeight="322.0" prefWidth="424.0" style="-fx-background-color: #a3a3c2;" title="For Temperature">
+         <xAxis>
+            <CategoryAxis fx:id="X1" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="Y1" side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleAction" text="&lt;&lt;Go Back" textFill="#9040ad" />
+      <Button fx:id="btnExit" layoutX="497.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleAction" prefHeight="31.0" prefWidth="86.0" text="Exit" textFill="#7571d1" />
+      <Text fill="#d720d7" layoutX="165.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphical Representatiom" wrappingWidth="208.91064453125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

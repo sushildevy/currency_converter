@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="490.0" prefWidth="557.0" style="-fx-background-color: #d9e5f2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.graphController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="64.0" layoutY="66.0" prefHeight="364.0" prefWidth="430.0" style="-fx-background-color: #a3a3c2;" title="For Currency">
+        <xAxis>
+          <CategoryAxis fx:id="X" prefHeight="13.0" prefWidth="439.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="Y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Text fill="#a66c1c" layoutX="148.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphical Representation" wrappingWidth="224.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="39.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleAction" text="Go Back" />
+      <Button fx:id="btnExit" layoutX="433.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleAction" prefHeight="31.0" prefWidth="74.0" text="Exit" />
+   </children>
+</AnchorPane>
